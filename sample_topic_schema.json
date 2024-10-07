@@ -1,0 +1,55 @@
+{
+    "pstreeleafdata": {
+        "SETID": {
+            "string": "DUKEN"
+        },
+        "SETCNTRLVALUE:": {
+            "string": " "
+        },
+        "TREENAME": {
+            "string" : "RESP_CENTER_RPTG"
+        },
+        "EFFDT": {
+            "string" : "2024-01-01 00:00:00"
+        },
+        "TREE_NODE_NUM": {
+            "string" : "1156960"
+        },
+        "RANGE_FROM": {
+            "string" : "0202"
+        },
+        "RANGE_TO": {
+            "string": "0202"
+        },
+        "TREE_BRANCH": {
+            "string": " "
+        },
+        "DYNAMIC_RANGE": {
+            "string": "N"
+        },
+        "OLD_TREE_NODE_NUM": {
+            "string": "N"
+        },
+        "LEAF_IMAGE": {
+            "string": " "
+        },
+        "DE_SOURCE_UPDATE_TS": {
+            "string": "2024-09-12 09:50:50.000000"
+        }
+
+    },
+    "pstreeleafbeforeData":"null",
+    "pstreeleafheaders": {
+        "operation": "DELETE",
+        "changeSequence": 2024091213505000000000000000007877865,
+        "timestamp":"2024-09-12T13:50:50.000",
+        "transactionId":"0000000000000000000000000000A000A",
+        "transactionEventCounter":{
+            "long": 5
+        },
+        "transactionLastEvent": {
+            "boolean": false
+        }
+    }
+
+}

@@ -1,0 +1,53 @@
+topic_name: "pstreeleaf"
+
+table:
+  name: "example_table"
+  columns:
+    - avro_field: "SETID.string"  # The part of the path after <topic_name>data
+      sql_column: "set_id"
+      type: "VARCHAR"
+    - avro_field: "SETCNTRLVALUE.string"
+      sql_column: "set_ctrl_value"
+      type: "VARCHAR"
+    - avro_field: "TREENAME.string"
+      sql_column: "tree_name"
+      type: "VARCHAR"
+    - avro_field: "EFFDT.string"
+      sql_column: "effective_date"
+      type: "TIMESTAMP"
+    - avro_field: "TREE_NODE_NUM.string"
+      sql_column: "tree_node_num"
+      type: "VARCHAR"
+    - avro_field: "RANGE_FROM.string"
+      sql_column: "range_from"
+      type: "VARCHAR"
+    - avro_field: "RANGE_TO.string"
+      sql_column: "range_to"
+      type: "VARCHAR"
+    - avro_field: "TREE_BRANCH.string"
+      sql_column: "tree_branch"
+      type: "VARCHAR"
+    - avro_field: "DYNAMIC_RANGE.string"
+      sql_column: "dynamic_range"
+      type: "VARCHAR"
+    - avro_field: "OLD_TREE_NODE_NUM.string"
+      sql_column: "old_tree_node_num"
+      type: "VARCHAR"
+    - avro_field: "LEAF_IMAGE.string"
+      sql_column: "leaf_image"
+      type: "VARCHAR"
+    - avro_field: "DE_SOURCE_UPDATE_TS.string"
+      sql_column: "source_update_timestamp"
+      type: "TIMESTAMP"
+
+  delete_condition:
+    conditions:
+      - column: "tree_node_num"
+        avro_field: "TREE_NODE_NUM.string"
+        operator: "="
+    combine_with: "AND"
+
+database:
+  jdbcUrl: "jdbc:postgresql://localhost:5432/mydatabase"
+  username: "postgres"
+  password: "password"
